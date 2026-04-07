@@ -1169,7 +1169,7 @@ body.is-high-contrast .contact-form p {
   display: grid;
   grid-template-columns: 1.02fr 0.98fr;
   gap: 22px;
-  align-items: start;
+  align-items: stretch;
   min-height: calc(100vh - 110px);
   min-width: none;
   padding-top: 34px;
@@ -1523,15 +1523,33 @@ h3 {
 
 .hero-visual {
   perspective: 1400px;
-  align-self: start;
+  /* align-self: start; */
   margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;   /* 🔥 IMPORTANT */
 }
 
 .visual-card {
   position: relative;
-  min-height: 635px;
+  /* min-height: 635px;
   min-width: 480px;
-  padding: 32px;
+  padding: 32px; */
+
+  width: 100%;              /* 🔥 fix shrink */
+  max-width: 42rem;         /* 🔥 responsive width */
+  
+  min-height: 32rem;        /* 🔥 base height */
+  height: 100%;
+
+  padding: 2rem;
+  margin: 0 auto;           /* 🔥 center */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 40px;
@@ -2869,8 +2887,10 @@ body[data-theme="day"] .site-footer {
   }
 
   .visual-card {
-    min-height: 600px;
-    padding: 20px;
+    /* min-height: 600px;
+    padding: 20px; */
+     min-height: auto;
+    padding: 1.2rem;
   }
 
   .scene-ring {

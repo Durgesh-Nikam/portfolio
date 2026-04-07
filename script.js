@@ -32,7 +32,7 @@ const settingsKey = "portfolio-accessibility";
 const defaults = {
   theme: "dark",
   font: "sora",
-  fontSize: 14,
+  fontSize: 12,
   accent: "violet",
   brutalism: false,
   highContrast: false
@@ -412,7 +412,7 @@ contrastToggle?.addEventListener("click", () => {
 });
 
 fontSizeDown?.addEventListener("click", () => {
-  settings.fontSize = Math.max(12, settings.fontSize - 1);
+  settings.fontSize = Math.max(10, settings.fontSize - 1);
   saveSettings();
   applySettings();
 });
