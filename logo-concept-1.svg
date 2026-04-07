@@ -1,0 +1,45 @@
+<svg width="960" height="960" viewBox="0 0 960 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="160" y1="120" x2="820" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#050816"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="255" y1="236" x2="705" y2="724" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="0.5" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <linearGradient id="line1" x1="247" y1="280" x2="713" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#67E8F9"/>
+    </linearGradient>
+    <filter id="glow1" x="161" y="161" width="638" height="638" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="24" result="effect1_foregroundBlur"/>
+    </filter>
+  </defs>
+  <rect width="960" height="960" rx="220" fill="url(#bg1)"/>
+  <rect x="86" y="86" width="788" height="788" rx="180" stroke="#FFFFFF" stroke-opacity="0.16"/>
+  <g opacity="0.26">
+    <circle cx="480" cy="480" r="278" stroke="url(#line1)" stroke-width="2" stroke-dasharray="10 18"/>
+    <circle cx="480" cy="480" r="224" stroke="#F97316" stroke-opacity="0.34" stroke-width="2" stroke-dasharray="8 16"/>
+  </g>
+  <g filter="url(#glow1)">
+    <circle cx="480" cy="480" r="182" fill="url(#accent1)" fill-opacity="0.16"/>
+  </g>
+  <path d="M292 256H418C548 256 628 338 628 480C628 622 548 704 418 704H292V256ZM394 344V616H415C485 616 530 569 530 480C530 391 485 344 415 344H394Z" fill="url(#accent1)"/>
+  <path d="M470 256H566L666 414V256H754V704H658L558 546V704H470V256Z" fill="white"/>
+  <g opacity="0.92">
+    <circle cx="249" cy="480" r="14" fill="#22D3EE"/>
+    <circle cx="710" cy="337" r="14" fill="#8B5CF6"/>
+    <circle cx="737" cy="626" r="14" fill="#F97316"/>
+    <circle cx="365" cy="742" r="14" fill="#67E8F9"/>
+    <circle cx="592" cy="225" r="11" fill="white"/>
+  </g>
+  <path d="M249 480L306 480" stroke="#22D3EE" stroke-width="4"/>
+  <path d="M697 349L650 380" stroke="#8B5CF6" stroke-width="4"/>
+  <path d="M724 618L670 598" stroke="#F97316" stroke-width="4"/>
+  <text x="480" y="810" fill="white" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="700" text-anchor="middle" letter-spacing="10">DURGESH NIKAM</text>
+  <text x="480" y="860" fill="#A5B4FC" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" text-anchor="middle" letter-spacing="7">DATA ENGINEER • ML • ANALYTICS</text>
+</svg>
