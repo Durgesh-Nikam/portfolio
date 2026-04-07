@@ -777,3 +777,19 @@ contactForm?.addEventListener("submit", () => {
     formStatus.textContent = "Sending your message to my inbox...";
   }
 });
+
+
+
+
+const aiNote = document.getElementById("ai-note");
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.innerHeight + window.scrollY;
+  const pageHeight = document.body.offsetHeight;
+
+  if (scrollPosition >= pageHeight - 0.1) {
+    aiNote.classList.add("show");
+  } else {
+    aiNote.classList.remove("show");
+  }
+});

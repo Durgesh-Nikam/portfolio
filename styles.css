@@ -3012,3 +3012,33 @@ body[data-theme="day"] .site-footer {
     display: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+.ai-note {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: white;
+  font-size: 0.85rem;
+  white-space: nowrap;   /* 🔥 keeps in one line */
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+
+  z-index: 999;
+}
+
+.ai-note.show {
+  opacity: 1;
+}
