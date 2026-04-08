@@ -608,7 +608,7 @@ body[data-theme="day"] .site-header {
   padding: 0;
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: rgba(15, 17, 27, 0.7);
+  background: var(--bg-panel);
   color: var(--text);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
   transition:
@@ -2849,9 +2849,34 @@ body[data-theme="day"] .site-footer {
   display: none;
 }
 
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.show {
+  display: flex;
+}
+
 @media (max-width: 760px) {
 
 
+  .mobile-menu {
+    position: absolute;
+    top: 80px;
+    right: 16px;
+
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 12px;
+    border-radius: 12px;
+
+    background: var(--bg-panel);
+    backdrop-filter: blur(10px);
+
+    z-index: 999;
+  }
 
 
 
@@ -2867,7 +2892,7 @@ body[data-theme="day"] .site-footer {
 
   /* Hide nav links */
   .nav-links {
-    display: none;
+    display: none !important;
   }
 
   /* Make header single row */
@@ -2897,11 +2922,11 @@ body[data-theme="day"] .site-footer {
   /* Menu button */
   .menu-toggle {
     display: block;
-    font-size: 18px;
+    font-size: 30px;
     padding: 6px 10px;
     border-radius: 10px;
     border: 1px solid var(--line);
-    background: var(--surface);
+    background: var(--bg-panel);
     color: var(--text);
   }
 
