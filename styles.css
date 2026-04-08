@@ -2844,6 +2844,11 @@ body[data-theme="day"] .site-footer {
   }
 }
 
+
+.menu-toggle {
+  display: none;
+}
+
 @media (max-width: 760px) {
 
 
@@ -2851,7 +2856,14 @@ body[data-theme="day"] .site-footer {
 
 
 
-  @media (max-width: 760px) {
+
+  .mini-resume-link {
+    display: none;
+  }
+
+  .brand-copy {
+    font-size: 3px;
+  }
 
   /* Hide nav links */
   .nav-links {
@@ -2893,7 +2905,7 @@ body[data-theme="day"] .site-footer {
     color: var(--text);
   }
 
-}
+
 
 
 

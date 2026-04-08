@@ -787,7 +787,7 @@ window.addEventListener("scroll", () => {
   const scrollPosition = window.innerHeight + window.scrollY;
   const pageHeight = document.body.offsetHeight;
 
-  if (scrollPosition >= pageHeight - 0.1) {
+  if (scrollPosition >= pageHeight - 1) {
     aiNote.classList.add("show");
   } else {
     aiNote.classList.remove("show");
