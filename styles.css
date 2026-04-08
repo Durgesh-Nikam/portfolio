@@ -163,6 +163,9 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: none;
   scrollbar-color: transparent transparent;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -2842,6 +2845,60 @@ body[data-theme="day"] .site-footer {
 }
 
 @media (max-width: 760px) {
+
+
+
+
+
+
+  @media (max-width: 760px) {
+
+  /* Hide nav links */
+  .nav-links {
+    display: none;
+  }
+
+  /* Make header single row */
+  .site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Align right side items */
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Reduce sizes for mobile */
+  .mini-resume-link {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .theme-toggle {
+    padding: 6px;
+  }
+
+  /* Menu button */
+  .menu-toggle {
+    display: block;
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--text);
+  }
+
+}
+
+
+
+
+
   .page-shell {
     width: min(100% - 20px, 1180px);
   }
@@ -2853,11 +2910,7 @@ body[data-theme="day"] .site-footer {
     border-radius: 28px;
   }
 
-  .header-actions,
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+
 
   .brand {
     justify-content: center;
@@ -2895,21 +2948,21 @@ body[data-theme="day"] .site-footer {
 
    .ai-note {
     left: 50%;
-    bottom: 16px;
+    bottom: 7px;
     transform: translateX(-50%);
     
     width: 90%;              /* 🔥 responsive */
     max-width: 340px;
 
     padding: 10px 14px;
-    font-size: 11px;
+    font-size: 0.12rem;
 
     border-radius: 14px;
     text-align: center;
   }
 
   .ai-note {
-  line-height: 1.4;
+  line-height: 1.5;
   word-break: break-word;
 }
 
@@ -3055,18 +3108,29 @@ body[data-theme="day"] .site-footer {
   left: 50%;
   transform: translateX(-50%);
 
+  width: auto;
+  max-width: 90%;
+  
+  padding: 10px 14px;
+  border-radius: 14px;
+
   color: white;
-  font-size: 0.85rem;
-  white-space: nowrap;   /* 🔥 keeps in one line */
+  font-size: 0.58rem;
+  text-align: center;
+
+  background: rgba(15, 18, 28, 0.6);
+  backdrop-filter: blur(10px);
 
   opacity: 0;
   transition: opacity 0.4s ease;
 
   z-index: 999;
-  line-height: 1.4;
-  word-break: break-word;
 
+  line-height: 1.5;
+  word-break: break-word;
 }
+
+
 
 .ai-note.show {
   opacity: 1;
