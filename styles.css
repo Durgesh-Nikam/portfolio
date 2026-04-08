@@ -677,7 +677,7 @@ body[data-theme="day"] .theme-toggle {
 
 .appearance-panel {
   position: absolute;
-  top: calc(100% + 14px);
+  top: calc(100% + 22px);
   right: 0;
   width: 292px;
   padding: 12px;
@@ -1172,10 +1172,9 @@ body.is-high-contrast .contact-form p {
   display: grid;
   grid-template-columns: 1.02fr 0.98fr;
   gap: 22px;
-  align-items: stretch;
-  min-height: calc(100vh - 110px);
+  align-items: flex-start;
   min-width: none;
-  padding-top: 34px;
+  padding-top: clamp(40px, 8vh, 100px);
 }
 
 .hero-copy {
@@ -1543,7 +1542,7 @@ h3 {
   width: 100%;              /* 🔥 fix shrink */
   max-width: 42rem;         /* 🔥 responsive width */
   
-  min-height: 32rem;        /* 🔥 base height */
+  min-height: clamp(400px, 60vh, 400px);        /* 🔥 base height */
   height: 100%;
 
   padding: 2rem;
@@ -2958,7 +2957,7 @@ body[data-theme="day"] .site-footer {
   }
 
   .appearance-panel {
-    right: 250%;
+    right: 230%;
     width: min(280px, calc(100vw - 20px));
     transform: translateX(50%);
   }
